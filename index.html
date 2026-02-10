@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新年祝福</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 背景音乐 -->
+    <audio id="bgm" loop>
+        <source src="assets/audio/bgm.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">新年祝福</h1>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="btn">主题切换</button>
+                <button id="music-toggle" class="btn">
+                    <span class="music-icon">🔊</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="hero">
+        <div class="hero-content">
+            <h2>新年快乐！</h2>
+            <p>愿新的一年带给你无限的快乐和幸福</p>
+        </div>
+        <!-- 装饰灯笼 -->
+        <div class="lanterns">
+            <div class="lantern"></div>
+            <div class="lantern"></div>
+        </div>
+    </header>
+
+    <!-- 祝福展示区 -->
+    <section class="wishes">
+        <div class="container">
+            <h3>精选祝福</h3>
+            <div class="wishes-container">
+                <div class="wish-card active">
+                    <p>愿你在新的一年里，事业蒸蒸日上，家庭幸福美满，身体健康，万事如意！</p>
+                </div>
+                <div class="wish-card">
+                    <p>新年新气象，愿你在新的一年里，收获满满，快乐多多，梦想成真！</p>
+                </div>
+                <div class="wish-card">
+                    <p>祝大家新年快乐，心想事成，财源广进，步步高升！</p>
+                </div>
+            </div>
+            <div class="wish-controls">
+                <button class="btn prev-wish">上一条</button>
+                <button class="btn next-wish">下一条</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 卡片定制区 -->
+    <section class="custom-card">
+        <div class="container">
+            <h3>定制祝福卡片</h3>
+            <div class="card-editor">
+                <textarea id="custom-wish" placeholder="输入你的祝福内容..."></textarea>
+                <div class="card-preview">
+                    <h4>预览</h4>
+                    <div class="preview-content">
+                        <p id="preview-text">输入你的祝福内容...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button id="copy-wish" class="btn">复制祝福</button>
+                <button id="reset-wish" class="btn">重置</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 烟花效果 -->
+    <canvas id="fireworks"></canvas>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 新年祝福网页</p>
+            <button id="back-to-top" class="btn">返回顶部</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
